@@ -12,10 +12,11 @@
     font-family: "SuperMario";
 }
 
-  @font-face {
+@font-face {
     font-family: "SuperMario";
     src: url(./SuperMario.ttf);
     font-weight: normal;
     font-style: normal;
 }
+
 

@@ -1,0 +1,75 @@
+[
+
+    {
+        "id": 1,
+        "name": "Mario",
+        "image": "./assets/images/mario.png"
+    },
+
+    {
+        "id": 2,
+        "name": "Luigi",
+        "image": "./assets/images/luigi.png"
+    },
+
+    {
+        "id": 3,
+        "name": "Peach",
+        "image": "./assets/images/peach.png"
+    },
+
+    {
+        "id": 4,
+        "name": "Yoshi",
+        "image": "./assets/images/yoshi.png"
+    },
+
+    {
+        "id": 5,
+        "name": "Bowser",
+        "image": "./assets/images/bowser.png"
+    },
+
+    {
+        "id": 6,
+        "name": "Bowser Jr.",
+        "image": "./assets/images/bowser-jr.png"
+    },
+
+    {
+        "id": 7,
+        "name": "Goomba",
+        "image": "./assets/images/goomba.png"
+    },
+
+    {
+        "id": 8,
+        "name": "Boo",
+        "image": "./assets/images/boo.png"
+    },
+
+    {
+        "id": 9,
+        "name": "Monty",
+        "image": "./assets/images/monty.png"
+    },
+
+    {
+        "id": 10,
+        "name": "Waluigi",
+        "image": "./assets/images/waluigi.png"
+    },
+
+    {
+        "id": 11,
+        "name": "Wario",
+        "image": "./assets/images/wario.png"
+    },
+    
+    {
+        "id": 12,
+        "name": "Shyguy",
+        "image": "./assets/images/shyguy.png"
+    }
+    
+]
