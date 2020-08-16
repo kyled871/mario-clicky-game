@@ -3,7 +3,7 @@ import "./Instructions.css";
 
 function Instructions() {
     return (
-        <div>
+        <div className="instructions">
             <p className="text-center">Click on an image to earn points, but don't click on any more than once!</p>
         </div>
     );
