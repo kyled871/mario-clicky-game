@@ -6,8 +6,8 @@ function Title(props) {
         <div>
             <nav className="navbar title">
                 <a href="/"><h1 className="brand homeButton">Mario Clicky Game</h1></a>
-                <h1 className="brand">Click an image to begin!</h1>
-                <h1 className="brand">Score: {props.score}</h1>
+                <h1 className="brand mr-3">{props.msg || "Click a character to begin!"}</h1>
+                <h2 className="brand mr-3">Score: {props.score}<br></br> High Score: {props.highScore}</h2>
             </nav>
         </div>
     );

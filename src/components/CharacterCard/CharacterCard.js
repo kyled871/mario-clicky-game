@@ -4,8 +4,13 @@ import './CharacterCard.css';
 function CharacterCard(props) {
     return(
 
-        <div className="col-3">
-            <img src={props.image} alt={props.name}></img>
+        <div className="col-3 mb-3">
+            <img 
+                className="img-box"
+                src={props.image} 
+                alt={props.name} 
+                onClick={() => props.clickChar(props)}>
+            </img>
         </div>
         
     )
