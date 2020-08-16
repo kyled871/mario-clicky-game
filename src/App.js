@@ -18,13 +18,14 @@ class App extends Component {
 
   highScore = () => {
 
-    let hiScore = this.state.score
+    if (this.state.score > this.state.highScore) {
 
-    this.setState({
-      highScore: hiScore
-    })
-
-
+      let hiScore = this.state.score
+  
+      this.setState({
+        highScore: hiScore
+      })
+    }
   }
 
   randomizeBoard = characters => {
@@ -85,6 +86,7 @@ class App extends Component {
         score: 0,
         msg: `You already clicked ${event.name}!`
       })
+      
     }
   }
   
