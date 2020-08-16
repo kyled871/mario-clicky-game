@@ -21,6 +21,7 @@ class App extends Component {
     if (this.state.score > this.state.highScore) {
 
       let hiScore = this.state.score
+      localStorage.setItem('localHighScore', this.state.score)
   
       this.setState({
         highScore: hiScore
@@ -46,6 +47,12 @@ class App extends Component {
 
   componentDidMount = () => {
     this.handleRandomize()
+    let initScore = localStorage.getItem('localHighScore')
+    console.log(localStorage)
+
+    this.setState({
+      highScore: initScore || 0
+    })
   }
 
   randomMessage = () => {
@@ -84,7 +91,7 @@ class App extends Component {
       this.setState({
         clicked: [],
         score: 0,
-        msg: `You already clicked ${event.name}!`
+        msg: `You already clicked ${event.name}! Try Again!`
       })
       
     }
