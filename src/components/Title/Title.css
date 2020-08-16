@@ -19,4 +19,11 @@
     font-style: normal;
 }
 
+.homeButton {
+    text-decoration: none;
+    color: white;
+}
 
+.homeButton:hover {
+    text-decoration: none;
+}

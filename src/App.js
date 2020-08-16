@@ -47,6 +47,23 @@ class App extends Component {
     this.handleRandomize()
   }
 
+  randomMessage = () => {
+    let messageArr = [
+      "Wahoo!",
+      "Nice One!",
+      "Correct!",
+      "Mama Mia!"
+    ]
+
+    let randomMesg = messageArr[Math.floor(Math.random() * messageArr.length)]
+
+    this.setState({
+      msg: randomMesg
+    })
+
+    
+  }
+
 
   clickChar = (event) => {
     
@@ -54,10 +71,10 @@ class App extends Component {
     const clicked = event.id
 
     if (this.state.clicked.indexOf(clicked) === -1 ) {
+      this.randomMessage()
       this.setState({
         clicked: this.state.clicked.concat(clicked),
         score: this.state.score +1,
-        msg: "Correct!"
       });
 
     } else {
