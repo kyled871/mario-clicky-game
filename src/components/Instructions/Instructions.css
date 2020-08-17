@@ -3,6 +3,9 @@
     padding: 30px 0;
     font-size: 20px;
     font-weight: bold;
+    background-image: url('/assets/images/star-banner.jpg');
     background-color: darkgray;
     margin-bottom: 5px;
+    color: white;
+    text-shadow: 0 0 2px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
 }
