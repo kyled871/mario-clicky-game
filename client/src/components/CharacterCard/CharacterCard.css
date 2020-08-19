@@ -8,7 +8,6 @@
     position: relative;
     bottom: -2;
     background: url('/assets/images/select-background.jpg');
-    background-color: rgba(255, 0, 0, 0.8);
     box-shadow: 1px 1px 2px black, 1px 1px 25px yellow, 0 0 5px yellow;
 }
 
@@ -20,3 +19,4 @@
         margin: 5px;
     }
 }
+
