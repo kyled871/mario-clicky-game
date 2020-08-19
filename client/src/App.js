@@ -4,6 +4,7 @@ import Instructions from './components/Instructions/Instructions';
 import CharacterCard from './components/CharacterCard/CharacterCard';
 import characters from './characters.json';
 import Wrapper from './components/Wrapper/Wrapper';
+import sfx from "./utils/sfx"
 
 class App extends Component {
 
@@ -12,7 +13,9 @@ class App extends Component {
     clicked: [],
     score: 0,
     highScore: 0,
-    msg: ""
+    msg: "",
+
+    musicPlaying: false
   };
 
 
@@ -74,12 +77,22 @@ class App extends Component {
 
 
   clickChar = (event) => {
+
+    if (!this.state.musicPlaying) {
+      sfx.themeSong()
+
+      this.setState({
+        musicPlaying: true
+      })
+    }
+
     
     this.handleRandomize()
     const clicked = event.id
 
     if (this.state.clicked.indexOf(clicked) === -1 ) {
       this.randomMessage()
+      sfx.coinSound()
       this.setState({
         clicked: this.state.clicked.concat(clicked),
         score: this.state.score +1,
@@ -88,6 +101,7 @@ class App extends Component {
     } else {
 
       this.highScore()
+      sfx.wrongSound()
       this.setState({
         clicked: [],
         score: 0,
