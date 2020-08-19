@@ -9,3 +9,11 @@
     color: white;
     text-shadow: 0 0 2px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
 }
+
+@media (max-width: 667px) {
+
+    .instructions {
+        font-size: 13px;
+
+    }
+}

@@ -27,3 +27,18 @@
 .homeButton:hover {
     text-decoration: none;
 }
+
+
+@media (max-width: 667px) {
+
+    .title {
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .brand {
+        font-size: 1rem;
+    }
+
+
+}
