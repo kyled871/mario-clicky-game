@@ -1,4 +1,4 @@
-# [Mario Clicky Game] (https://clicky-game-mario1.herokuapp.com/)
+# [Mario Clicky Game](https://clicky-game-mario1.herokuapp.com/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
